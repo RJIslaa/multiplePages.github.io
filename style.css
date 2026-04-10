@@ -1,0 +1,57 @@
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 700px;
+}
+
+#invincibleCarousel {
+  flex: 1;
+  max-width: 600px;
+}
+
+.carousel-item {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: relative;
+  width: auto;
+  margin: 0;
+  top: auto;
+  right: auto;
+  left: auto;
+  background: none;
+  border: none;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev {
+  order: -1;
+}
