@@ -1,13 +1,5 @@
-.carousel-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  max-width: 700px;
-}
-
 #invincibleCarousel {
-  flex: 1;
+  position: relative;
   max-width: 600px;
 }
 
@@ -35,14 +27,27 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
-  margin: 0;
-  top: auto;
-  right: auto;
-  left: auto;
+  height: auto;
   background: none;
   border: none;
+  opacity: 0.7;
+  z-index: 5;
+}
+
+.carousel-control-prev {
+  left: -60px;
+}
+
+.carousel-control-next {
+  right: -60px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
   opacity: 1;
 }
 
@@ -50,8 +55,5 @@
 .carousel-control-next-icon {
   width: 40px;
   height: 40px;
-}
-
-.carousel-control-prev {
-  order: -1;
+  background-size: contain;
 }
